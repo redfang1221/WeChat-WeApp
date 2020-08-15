@@ -1,0 +1,107 @@
+.title{
+  padding-top: 10rpx;
+  padding-left: 40rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+  background-color: #DBECBF;
+}
+.title>.homePage{
+  font-size: 28rpx;
+  color: #53800D;
+  text-align: right;
+  vertical-align: text-top;
+  margin-top: 5rpx;
+  margin-right: 20rpx;
+}
+.empty_1{
+  color: #DBECBF;
+  font-size: 15rpx;
+}
+.form-control{
+  width: 200rpx;
+  height: 20rpx;
+  font-size: 25rpx;
+  line-height: 20rpx;
+  color: #53800D; 
+  background-color: #AAC580;
+  border: 1rpx solid #AAC580;
+  border-radius: 10rpx;
+  text-align: center;
+}
+.userInfo_1{
+  font-size: 26rpx;
+  color: #53800D;
+  text-align: left;
+}
+.tag-class-1{
+  margin-top: 20rpx;
+  height: 20rpx;
+}
+.button-class-1{
+  margin-top: 5px;
+}
+.card-class-1{
+  margin-bottom: 200rpx;
+}
+.card-title-1{
+  font-size: 26rpx;
+}
+.desc-title-1{
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+.me-detail-button-1{
+  width: 150rpx;
+  font-weight: 500;
+}
+.me-detail-button-2{
+  width: 200rpx;
+  font-weight: 500;
+}
+.van-swipe-cell__right {
+  display: inline-block;
+  width: 65px;
+  height: 44px;
+  font-size: 15px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  background-color: #ee0a24;
+}
+.tree-select-1{
+  --tree-select-item-active-color: #AAC580;
+}
+.tag-class-2{
+  margin-top: 20rpx;
+  height: 20rpx;
+}
+.button-class-2{
+  margin-top: 5px;
+}
+.card-class-2{
+  margin-bottom: 200rpx;
+}
+.card-title-2{
+  font-size: 26rpx;
+}
+.desc-title-2{
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+.me-detail-button-3{
+  width: 150rpx;
+  font-weight: 500;
+}
+.van-swipe-cell__right_1 {
+  display: inline-block;
+  width: 65px;
+  height: 44px;
+  font-size: 15px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  background-color: #ee0a24;
+}
+.swipeCellStyle{
+  height: 250rpx;
+}

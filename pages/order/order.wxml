@@ -1,0 +1,32 @@
+<!--pages/order/order.wxml-->
+<view class="background">
+  <view class="title_1">
+    <text class="title">天翼智慧家庭科技有限公司</text>
+  </view>
+  <view class="title_2">
+    <text class="title">实验室服务委托单</text>
+  </view>
+  <view class="fixedInfo">
+    <view class="entryNo">服务委托单编号：{{entryNo}}</view>
+    <view class="OrderManager">智家接口人：{{orderManager}}</view>
+    <view class="OrderDate">申请日期：{{currentDate}}</view>
+  </view>
+  <view class="subtitle_1">
+    <text class="title">申请信息</text>
+  </view>
+  <view class="subInfo_1">
+    <van-cell-group>
+      <van-field
+        value="{{ deptName }}"
+        required
+        clearable
+        label="单位和部门名称"
+        icon="question-o"
+        placeholder="单位和部门名称"
+        bind:click-icon="onClickIcon"
+        label-class="fieldReminder_1"
+        autosize
+      />
+    </van-cell-group>
+  </view>
+</view>

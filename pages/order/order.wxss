@@ -1,0 +1,71 @@
+/* pages/order/order.wxss */
+page{
+  background-color: #D1E2B5;
+}
+.background{
+  background-color: white;
+  margin: 15rpx;
+  width: 720rpx;
+  height: 1170rpx;
+}
+.background>.title_1{
+  padding-top: 20rpx;
+  text-align: center;
+}
+.background>.title_2{
+  text-align: center;
+}
+.background>.title_1>.title{
+  color: #4B7903;
+  font-size: 36rpx;
+  font-weight: 800;
+  text-align: center;
+}
+.background>.title_2>.title{
+  color: #4B7903;
+  font-size: 36rpx;
+  font-weight: 800;
+  text-align: center;
+}
+.background>.fixedInfo{
+  border-color: #DBEDC0;
+  border-width: 4rpx;
+  border-style: solid;
+  margin: 10rpx;
+}
+.background>.fixedInfo>.entryNo {
+  font-size: 28rpx;
+  font-weight: 450;
+  padding: 15rpx;
+}
+.background>.fixedInfo>.OrderManager {
+  font-size: 28rpx;
+  font-weight: 450;
+  padding: 15rpx;
+}
+.background>.fixedInfo>.OrderDate {
+  font-size: 28rpx;
+  font-weight: 450;
+  padding: 15rpx;
+}
+.background>.subtitle_1 {
+  padding-top: 8rpx;
+  padding-bottom: 8rpx;
+  text-align: center;
+}
+.background>.subtitle_1>.title {
+  color: #4B7903;
+  font-size: 36rpx;
+  font-weight: 800;
+  text-align: center;
+}
+.background>.subInfo_1 {
+  border-color: #DBEDC0;
+  border-width: 4rpx;
+  border-style: solid;
+  margin: 10rpx;
+}
+.fieldReminder_1{
+  display: block;
+  font-size: 20rpx;
+}

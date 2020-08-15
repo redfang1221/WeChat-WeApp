@@ -1,0 +1,38 @@
+/* pages/test/test.wxss */
+page{
+  background-color: #D1E2B5;
+}
+.title{
+  padding:30rpx 0;
+  /* background-color: #39B371; */
+  text-align: center;
+  color:#4B7902;
+}
+.title>text{
+  font-size:50rpx;
+  line-height: 80rpx;
+  font-weight: 1000;
+}
+.btn1::after{ 
+  border: none; 
+}
+.btn1{
+  margin-top: 150rpx;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 100rpx;
+  background: white;
+  color: #92AE65;
+  /* text-align: center; */
+  /* padding: 0rpx 100rpx; */
+}
+.btn1>text{
+  font-size: 38rpx;
+  line-height: 175rpx;
+  font-weight: 700;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}

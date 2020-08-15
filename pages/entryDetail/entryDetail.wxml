@@ -1,0 +1,31 @@
+<view class="background">
+  <view class="title_1">
+    <text class="title">天翼智慧家庭科技有限公司</text>
+  </view>
+  <view class="title_2">
+    <text class="title">实验室服务委托单</text>
+  </view>
+  <view class="fixedInfo">
+    <view class="entryNo">进场单编号：{{entryNo}}</view>
+    <view class="OrderManager">智家接口人：{{entryManager}}</view>
+    <view class="OrderDate">提交申请日期：{{currentDate}}</view>
+    <view class="dept">单位和部门单位：{{deptName}}</view>
+    <view class="projName">服务项目名称：{{projName}}</view>
+    <view class="contact">联系人：{{contact}}   电话：{{tel}}</view>
+    <view class="email">邮箱：{{email}}</view>
+    <view class="people">进场人员：{{staff}}</view>
+    <view class="description">工作说明：{{description}}</view>
+    <view class="requirement">资源需求：{{requirement}}</view>
+    <view class="entryDate">进场时间：{{date}}</view>
+    <view class="suggestion" wx:if="{{verifyStatus==0}}">实验室审核意见：审核通过</view>
+    <view class="suggestion" wx:if="{{verifyStatus==1}}">实验室审核意见：审核不通过</view>
+    <view class="suggestion" wx:if="{{verifyStatus==2}}">实验室审核意见：审核中</view>
+  </view>
+
+  <block class="button-1" wx:if="{{!lock}}">
+      <van-button type="primary" size="large" bind:click="onClickConfirm" custom-class="button-1">
+        修改
+      </van-button>
+      <van-dialog id="van-dialog" />
+  </block>
+</view>

@@ -1,0 +1,27 @@
+page{
+  background-color: #D1E2B5;
+}
+.userinfo-nickname{
+  color: black;
+  font-size: 32rpx;
+  font-weight: 800;
+  text-align: center;
+  margin: 50rpx;
+}
+.usermotto{
+  color: #4B7902;
+  font-size: 40rpx;
+  font-weight: 1000;
+  position: fixed;
+  top: 1000rpx;
+}
+.button-style{
+  color: #92AE65;
+  font-weight: 1000;
+  width: 400rpx;
+  margin: 10rpx;
+}
+.avator-style{
+  position: fixed;
+  left: 112rpx;
+}

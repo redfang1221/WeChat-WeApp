@@ -1,0 +1,113 @@
+<view class="background">
+  <view class="title_1">
+    <text class="title">天翼智慧家庭科技有限公司</text>
+  </view>
+  <view class="title_2">
+    <text class="title">实验室进场申请表</text>
+  </view>
+  <view class="fixedInfo">
+    <view class="entryNo">进场单编号：{{entryNo}}</view>
+    <view class="entryManager">智家接口人：{{entryManager}}</view>
+    <view class="currentDate">提交申请日期：{{currentDate}}</view>
+    <view class="subInfo_1">
+      <van-cell-group class="secton_1">
+        <van-field
+          value="{{ deptName }}"
+          type="text"
+          required
+          clearable
+          label="单位和部门名称"
+          title-width="200rpx"
+          bind:change="deptNameInput"
+        />
+        <van-field
+          value="{{ projName }}"
+          type="text"
+          required
+          clearable
+          label="服务项目名称"
+          title-width="200rpx"
+          bind:change="projNameInput"
+        />
+        <van-cell-group>
+          <van-row>
+            <van-col span="10">
+              <van-field
+                value="{{ contact }}"
+                type="text"
+                required
+                clearable
+                label="联系人"
+                title-width="90rpx"
+                bind:change="contactInput"
+              />
+            </van-col>
+            <van-col span="13">
+              <van-field
+                value="{{ tel }}"
+                type="tel"
+                required
+                clearable
+                label="电话"
+                title-width="70rpx"
+                bind:change="telInput"
+              />
+            </van-col>
+          </van-row>
+        </van-cell-group>
+        <van-field
+          value="{{ email }}"
+          type="text"
+          required
+          clearable
+          label="邮箱"
+          title-width="100rpx"
+          bind:change="emailInput"
+        />
+        <van-field
+          value="{{ staff }}"
+          type="textarea"
+          required
+          clearable
+          label="进场人员"
+          title-width="120rpx"
+          bind:change="staffInput"
+          autosize
+        />
+        <van-field
+          value="{{ description }}"
+          type="textarea"
+          required
+          clearable
+          label="工作说明"
+          title-width="120rpx"
+          bind:change="descriptionInput"
+          autosize
+        />
+        <van-field
+          value="{{ requirement }}"
+          type="textarea"
+          required
+          clearable
+          label="资源需求"
+          title-width="120rpx"
+          bind:change="requirementInput"
+          autosize
+        />
+        <van-cell title="进场时间" value="{{ date }}" bind:click="onDisplay" required title-class="cell-title" />
+        <van-calendar show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm" />
+      </van-cell-group>
+    </view>
+  </view>
+
+  <block title="确认弹窗" padding>
+      <van-button type="primary" size="large" bind:click="onClickConfirm">
+        提交
+      </van-button>
+      <van-dialog id="van-dialog" />
+  </block>
+
+</view>
+
+
+

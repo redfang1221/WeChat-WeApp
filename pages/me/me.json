@@ -1,0 +1,20 @@
+{
+  "usingComponents": {
+    "van-sidebar": "../../miniprogram_npm/@vant/weapp/sidebar/index",
+    "van-sidebar-item": "../../miniprogram_npm/@vant/weapp/sidebar-item/index",
+    "van-image": "../../miniprogram_npm/@vant/weapp/image/index",
+    "van-cell": "../../miniprogram_npm/@vant/weapp/cell/index",
+    "van-cell-group": "../../miniprogram_npm/@vant/weapp/cell-group/index",
+    "van-row":"../../miniprogram_npm/@vant/weapp/row/index",
+    "van-col": "../../miniprogram_npm/@vant/weapp/col/index",
+    "van-card": "../../miniprogram_npm/@vant/weapp/card/index",
+    "van-notify": "../../miniprogram_npm/@vant/weapp/notify/index",
+    "van-button": "../../miniprogram_npm/@vant/weapp/button/index",
+    "van-tag": "../../miniprogram_npm/@vant/weapp/tag/index",
+    "van-swipe-cell": "../../miniprogram_npm/@vant/weapp/swipe-cell/index",
+    "van-tree-select": "../../miniprogram_npm/@vant/weapp/tree-select/index",
+    "van-dialog": "../../miniprogram_npm/@vant/weapp/dialog/index",
+    "van-popup":"../../miniprogram_npm/@vant/weapp/popup/index"
+  },
+  "navigationBarTitleText": "创新开放实验室"
+}

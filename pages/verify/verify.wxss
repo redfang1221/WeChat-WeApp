@@ -1,0 +1,113 @@
+page{
+  background-color: #D1E2B5;
+}
+.background{
+  background-color: white;
+  margin: 15rpx;
+  width: 720rpx;
+  height: 1170rpx;
+}
+.background>.title_1{
+  padding-top: 20rpx;
+  text-align: center;
+}
+.background>.title_2{
+  text-align: center;
+}
+.background>.title_1>.title{
+  color: #4B7903;
+  font-size: 36rpx;
+  font-weight: 800;
+  text-align: center;
+}
+.background>.title_2>.title{
+  color: #4B7903;
+  font-size: 36rpx;
+  font-weight: 800;
+  text-align: center;
+}
+.background>.fixedInfo{
+  border-color: #DBEDC0;
+  border-width: 4rpx;
+  border-style: solid;
+  margin: 10rpx;
+}
+.background>.fixedInfo>.entryNo{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  margin-left: 100rpx;
+}
+.background>.fixedInfo>.OrderManager{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  margin-left: 100rpx;
+}
+.background>.fixedInfo>.OrderDate{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  margin-left: 100rpx;
+}
+.background>.fixedInfo>.dept{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  margin-left: 100rpx;
+}
+.background>.fixedInfo>.projName{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  margin-left: 100rpx;
+}
+.background>.fixedInfo>.contact{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  margin-left: 100rpx;
+}
+.background>.fixedInfo>.email{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  margin-left: 100rpx;
+}
+.background>.fixedInfo>.people{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  word-break:break-all;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+}
+.background>.fixedInfo>.description{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  word-break:break-all;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+}
+.background>.fixedInfo>.requirement{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  word-break:break-all;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+}
+.background>.fixedInfo>.entryDate{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  margin-left: 100rpx;
+}
+.background>.fixedInfo>.suggestion{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  text-align: left;
+  margin-left: 100rpx;
+  padding-bottom: 20rpx;
+}
