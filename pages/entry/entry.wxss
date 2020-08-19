@@ -122,3 +122,6 @@ page{
   font-size: 28rpx;
   color: gray;
 }
+.label-class {
+  font-size: 30rpx;
+}

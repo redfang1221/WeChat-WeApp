@@ -21,8 +21,7 @@ App({
           url:"http://47.100.22.17:80/template-0.0.1-SNAPSHOT/weapp/login?code="+code,
           method:"POST",
           success: function(result){
-            wx.removeStorageSync(result.header["Cookie"]);//每次登录时清除缓存
-            console.log(result);
+            wx.removeStorageSync('sessionid');//每次登录时清除缓存
             wx.setStorageSync('sessionid', result.header["Cookie"]); //保存Cookie到Storage
             console.log(result);
             //获取用户信息

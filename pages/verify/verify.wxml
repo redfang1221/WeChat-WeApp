@@ -17,9 +17,9 @@
     <view class="description">工作说明：{{description}}</view>
     <view class="requirement">资源需求：{{requirement}}</view>
     <view class="entryDate">进场时间：{{date}}</view>
-    <view class="suggestion" wx:if="{{verifyStatus==0}}">实验室审核意见：审核通过</view>
-    <view class="suggestion" wx:if="{{verifyStatus==1}}">实验室审核意见：审核不通过</view>
-    <view class="suggestion" wx:if="{{verifyStatus==2}}">实验室审核意见：审核中</view>
+    <view class="suggestion" wx:if="{{verifyStatus==0}}">实验室审核意见：待审核</view>
+    <view class="suggestion" wx:if="{{verifyStatus==1}}">实验室审核意见：审核通过</view>
+    <view class="suggestion" wx:if="{{verifyStatus==2}}">实验室审核意见：审核不通过</view>
   </view>
 
   <block class="button-1">

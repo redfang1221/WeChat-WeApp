@@ -3,8 +3,11 @@
     <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="button-style"  wx:if="{{ !showUserAuth && !waitLogin }}">授权信息</button> 
     <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="button-style" wx:if="{{ !showPhoneAuth && showUserAuth }}">获取手机号</button> 
   </view>
+
   <view class="authorizedInfo" wx:else>
-      <van-image width="100" height="100" src="{{userInfo.avatarUrl}}" fit="cover" round custom-class="avator-style"/>
+    <van-row gutter="20">
+      <van-col span="5" offset="5"><van-image width="100" height="100" src="{{userInfo.avatarUrl}}" fit="cover" round custom-class="image" /></van-col>
+    </van-row>
     <view class="userinfo-nickname">{{userInfo.nickName}}</view>
     <button bindtap="directToMenu" class="button-style">登录</button> 
   </view>

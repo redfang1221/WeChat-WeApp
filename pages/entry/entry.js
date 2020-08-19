@@ -66,9 +66,30 @@ Page({
     //后端传递负责人和编号
     if(this.data.modify=='0') {
       this.queryFixedInfo();
+      this.queryMyInfo();
     } else {
       this.queryEntryDetail();
     }
+  },
+  queryMyInfo(){
+    var api = 'http://47.100.22.17:80/template-0.0.1-SNAPSHOT/weapp/queryMyInfo/'
+    trans.transmitData(api,{},'',(data) => {
+      console.log(data);
+      if(data == undefined || data==null) {
+        Dialog.alert({
+          title: '数据同步失败，请稍后重试'
+        });
+        this.setData({
+          avatar:this.data.imageURL,
+          tel:'',
+          nickName:'昵称'
+        });
+        return;
+      }
+      this.setData({
+        tel:data.phoneNumber
+      });
+    });
   },
   onDisplay() {
     this.setData({ show: true });

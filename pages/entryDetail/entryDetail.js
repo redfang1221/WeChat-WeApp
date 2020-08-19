@@ -146,16 +146,19 @@ Page({
   checkEntryLock(){
     var api = 'http://47.100.22.17:80/template-0.0.1-SNAPSHOT/weapp/checkEntryLock/';
     var id = this.data.entryNo;
+    console.log(id);
     trans.transmitData(api,{entryNo:id},'',(data) => {
-      console.log(data);
+      console.log("ghjfdhfdg");
       if(data == undefined || data==null || data == '') {
         Dialog.alert({
           title: '数据同步失败，请稍后重试'
         });
         return;
       }
+      console.log(data);
       var temp = true;
       console.log(data.lock);
+      console.log("dasdsaasd");
       if(data.lock == '0') {
         temp = false;
         this.setData({

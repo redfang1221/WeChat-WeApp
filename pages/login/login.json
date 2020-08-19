@@ -1,7 +1,9 @@
 {
   "usingComponents": {
     "van-image": "../../miniprogram_npm/@vant/weapp/image/index",
-    "van-button": "../../miniprogram_npm/@vant/weapp/button/index"
+    "van-button": "../../miniprogram_npm/@vant/weapp/button/index",
+    "van-row": "../../miniprogram_npm/@vant/weapp/row/index",
+    "van-col": "../../miniprogram_npm/@vant/weapp/col/index"
   },
   "navigationBarTitleText": "创新开放实验室"
 }
