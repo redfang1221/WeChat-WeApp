@@ -1,0 +1,21 @@
+<view class="title">
+  <text>
+    创新开放实验室
+  </text>
+</view>
+
+<view class="content"> 
+  <button class='btn1' bindtap="order">
+      <text>委托单</text>
+  </button>
+  <button class='btn1' bindtap="entry">
+      <text>进场单</text>
+  </button>
+  <button class='btn1' bindtap="me">
+      <text>我的</text>
+  </button>
+</view>
+
+<button class='btn2' bindtap="contactUs">
+  <view>联系我们</view>
+</button>

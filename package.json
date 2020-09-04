@@ -1,0 +1,21 @@
+{
+  "name": "test4",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "@vant/weapp": "^1.4.1",
+    "miniprogram-ci": "^1.0.72",
+    "miniprogram-sm-crypto": "^0.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "postcss-pxtransform": "^3.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

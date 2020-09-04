@@ -1,0 +1,130 @@
+page{
+  background-color: #D1E2B5;
+}
+.background{
+  background-color: white;
+  margin: 15rpx;
+  width: 720rpx;
+  height: 1170rpx;
+}
+.background>.title_1{
+  padding-top: 20rpx;
+  text-align: center;
+}
+.background>.title_2{
+  text-align: center;
+}
+.background>.title_1>.title{
+  color: #4B7903;
+  font-size: 36rpx;
+  font-weight: 800;
+  text-align: center;
+}
+.background>.title_2>.title{
+  color: #4B7903;
+  font-size: 36rpx;
+  font-weight: 800;
+  text-align: center;
+}
+.background>.fixedInfo{
+  border-color: #DBEDC0;
+  border-width: 4rpx;
+  border-style: solid;
+  margin: 10rpx;
+}
+.background>.fixedInfo>.entryNo{
+  font-size: 28rpx;
+  color: #646566;
+  font-weight: 450;
+  padding-top: 15rpx;
+  padding-bottom: 8rpx;
+  padding-right: 8rpx;
+  padding-left: 8rpx;
+  margin-left: 20rpx;
+}
+.background>.fixedInfo>.entryManager{
+  font-size: 28rpx;
+  color: #646566;
+  font-weight: 450;
+  padding: 8rpx;
+  margin-left: 20rpx;
+}
+.background>.fixedInfo>.currentDate{
+  font-size: 28rpx;
+  color: #646566;
+  font-weight: 450;
+  padding: 8rpx;
+  margin-left: 20rpx;
+}
+.background>.subtitle_1{
+  padding-top: 8rpx;
+  padding-bottom: 8rpx;
+  text-align: center;
+}
+.background>.subtitle_1>.title{
+  color: #4B7903;
+  font-size: 36rpx;
+  font-weight: 800;
+  text-align: center;
+}
+.background>.subInfo_1{
+  border-color: #DBEDC0;
+  border-width: 4rpx;
+  border-style: solid;
+  margin: 10rpx;
+}
+.background>.btn1{
+  width: 400rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  background: #8CC434;
+  color: white;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+.cell-title{
+  color: #646566;
+}
+.confirm_1{
+  top: 40rpx;
+  font-size: 28rpx;
+  color: white;
+  height: 70rpx;
+  width: 200rpx;
+  background-color: #8CC434;
+  border-radius: 10rpx;
+}
+.popupRow_1{
+  height: 150rpx;
+  /* background-color: red; */
+}
+.popupRow_2{
+  /* background-color: blue; */
+  height: 400rpx;
+}
+.popupRow_3{
+  margin: 50rpx;
+}
+.popupRow_4{
+  border-style: solid;
+  border-width: 1rpx;
+}
+
+.textarea {
+  font-size: 28rpx;
+  margin: 10%;
+  background-color: lightgray;
+  width: 80%;
+  height: 100px;
+}
+.placeholder {
+  font-size: 28rpx;
+  color: gray;
+}
+.label-class {
+  font-size: 30rpx;
+}
+.input-class {
+  z-index: 10;
+}

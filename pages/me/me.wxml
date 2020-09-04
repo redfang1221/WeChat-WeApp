@@ -1,0 +1,163 @@
+<view class="fixInfo">
+<view class="title">
+  <view class="homePage" bindtap="backTpMenu">
+    返回首页
+  </view>
+  <van-cell-group>
+    <van-row>
+      <van-col>
+        <van-image width="100rpx" height="100rpx" fit="cover" round src="{{avatar}}" />
+      </van-col>
+      <van-col offset="4" custom-class="colStyle">
+        <van-row custom-class="empty_1" type="flex">
+          <view>xxx</view>
+        </van-row>
+        <van-row>
+          <text class="userInfo_1" >Hi，{{nickName}}</text>
+        </van-row>
+        <!-- <van-row>
+          <view>
+            <input type="tel" class="form-control" value="{{ tel }}" id="tel" />
+          </view>
+        </van-row> -->
+      </van-col>
+    </van-row>
+  </van-cell-group>
+</view>
+
+    <van-cell>
+      <van-dropdown-menu active-color="#27AE60" class="dropItem"> 
+        <van-dropdown-item options="{{ actions }}" value="{{ show1 }}" bind:change="selectType1"/>
+      </van-dropdown-menu>
+    </van-cell>
+
+    <van-tree-select
+      max="2"
+      items="{{ treeNav }}"
+      height="800px"
+      main-active-index="{{ mainActiveIndex }}"
+      active-id="{{ activeId }}"
+      bind:click-item="onClickItem"
+      bind:click-nav="onClickNav"
+      main-active-class="tree-select-1"
+    >
+
+    <van-cell-group
+      wx:if="{{ mainActiveIndex === 0 }}"
+      width="100%"
+      height="100%"
+      slot="content"
+    >
+
+
+    <!-- <view title="类型选择" class="selectbox" padding>
+        <van-cell clickable="true" is-link="true" bind:click="clickSelect1">{{choice1}}</van-cell>
+        <van-action-sheet 
+          show="{{ show[0] }}"
+          actions="{{ actions }}"
+          bind:select="selectType1"
+          bind:click-overlay="closeOverlay"
+          catchtouchmove="return"
+        />
+    </view> -->
+
+
+
+      <block>
+        <scroll-view scroll-y="true">
+        <view wx:for="{{entryList}}"  wx:key="index" wx:key="index" class="swipeCellStyle" >
+          <van-swipe-cell right-width="{{ 65 }}" async-close bind:close="swipeEntry" data-message="{{entryList[index].entryNo}}">
+              <van-card
+                desc="提交申请日期：{{entryList[index].currentDate}}"
+                title="编号：{{entryList[index].entryNo}}"
+                custom-class="card-class-1"
+                title-class="card-title-1"
+                desc-class="desc-title-1"
+              >
+                <view slot="tags" class="tag-class-1">
+                  <view wx:if="{{entryList[index].verified==1}}">
+                    <van-tag plain type="success">通过</van-tag>
+                  </view>
+                  <view wx:if="{{entryList[index].verified==2}}">
+                    <van-tag plain type="danger">未通过</van-tag>
+                  </view>
+                  <view wx:if="{{entryList[index].verified==0}}">
+                    <van-tag plain type="warning">待审核</van-tag>
+                  </view>
+                </view>
+                <view slot="footer" class="button-class-1">
+                  <van-button size="mini" round custom-class="me-detail-button-1" bindtap="directToDetail" data-message="{{entryList[index].entryNo}}">点击查看详情</van-button>
+                </view>
+            </van-card>
+            <view slot="right" class="van-swipe-cell__right">
+              删除 
+            </view>
+          </van-swipe-cell>
+          <van-dialog id="van-dialog"/>
+        </view>
+        </scroll-view>
+      </block>
+    </van-cell-group>
+    <van-cell-group
+      wx:if="{{ mainActiveIndex === 1 }}"
+      width="100%"
+      height="100%"
+      slot="content"
+    >
+    </van-cell-group>
+    <van-cell-group
+      wx:if="{{ mainActiveIndex === 2 }}"
+      width="100%"
+      height="100%"
+      slot="content"
+    >
+    <!-- <block title="类型选择" padding>
+        <van-cell clickable="true" is-link="true" bind:click="clickSelect3">{{choice3}}</van-cell>
+        <van-action-sheet
+          show="{{ show[2] }}"
+          actions="{{ actions }}"
+          bind:select="selectType3"
+        />
+    </block> -->
+    <block>
+      <scroll-view scroll-y="true" style="height: 100vh">
+      <view wx:for="{{verifyEntryList}}"  wx:key="index" class="swipeCellStyle" >
+        <van-swipe-cell right-width="{{ 65 }}" async-close bind:close="swipeEntryVerify" data-message="{{verifyEntryList[index].entryNo}}">
+            <van-card
+              desc="提交申请日期：{{verifyEntryList[index].currentDate}}"
+              title="编号：{{verifyEntryList[index].entryNo}}"
+              custom-class="card-class-2"
+              title-class="card-title-2"
+              desc-class="desc-title-2"
+            >
+              <view slot="tags" class="tag-class-1">
+                <view wx:if="{{verifyEntryList[index].verified==1}}">
+                  <van-tag plain type="success">通过</van-tag>
+                </view>
+                <view wx:if="{{verifyEntryList[index].verified==2}}">
+                  <van-tag plain type="danger">未通过</van-tag>
+                </view>
+                <view wx:if="{{verifyEntryList[index].verified==0}}">
+                  <van-tag plain type="warning">待审核</van-tag>
+                </view>
+              </view>
+              <view slot="footer" class="button-class-1">
+                <van-button size="mini" round custom-class="me-detail-button-3" bindtap="directToVerify" data-message="{{verifyEntryList[index].entryNo}}">审核详情</van-button>
+              </view>
+          </van-card>
+          <view slot="right" class="van-swipe-cell__right">删除</view>
+        </van-swipe-cell>
+        <van-dialog id="van-dialog"/>
+      </view>
+    </scroll-view>
+    </block>
+      </van-cell-group>
+      <van-cell-group
+        wx:if="{{ mainActiveIndex === 3 }}"
+        width="100%"
+        height="100%"
+        slot="content"
+      />
+  </van-tree-select>
+</view>
+
